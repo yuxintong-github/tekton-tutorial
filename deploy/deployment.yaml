@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: xtyu-tekton-tutorial
+  namespace: default
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: xtyu-tekton-tutorial
+    spec:
+      containers:
+      - name: xtyu-tekton-tutorial
+        image: __IMAGE__
