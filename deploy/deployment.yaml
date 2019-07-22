@@ -5,9 +5,14 @@ metadata:
   namespace: default
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: xtyu
   template:
     metadata:
       name: xtyu-tekton-tutorial
+      labels:
+        app: xtyu
     spec:
       containers:
       - name: xtyu-tekton-tutorial
